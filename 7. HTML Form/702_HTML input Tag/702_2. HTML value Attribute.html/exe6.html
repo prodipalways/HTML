@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>HTML value Attribute</title>
+</head>
+
+<body style="text-align:center">
+  <h1 style="color: green;">
+    ProdipAlways
+  </h1>
+
+  <h2>
+    HTML value Attribute
+  </h2>
+
+  Sorting Algorithms:
+  <select id="opt">
+    <option value="quick">Quick sort</option>
+    <option value="merge">Merge sort</option>
+    <option value="insertion">Insertion sort</option>
+  </select>
+
+  <button type="button" onclick="prodip()">Click me!</button>
+  <p id="p"></p>
+  <script>
+    function prodip() {
+      var x = document.getElementById("opt").selectedIndex;
+      var y = document.getElementsByTagName("option")[x].value;
+      document.getElementById("p").innerHTML = "The selected option has value equals " + y + ".";
+    } 
+  </script>
+</body>
+
+</html>

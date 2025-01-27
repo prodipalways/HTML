@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>HTML value Attribute</title>
+</head>
+
+<body style="text-align:center">
+  <h1 style="color:green;">
+    ProdipAlways
+  </h1>
+
+  <h2>
+    HTML value Attribute
+  </h2>
+
+  <button id="btn" value="ProdipAlways" onclick="prodip()">
+    Click me!</button>
+
+  <p id="g"></p>
+
+  <script>
+    function prodip() {
+      var x = document.getElementById("btn").value;
+      document.getElementById("g").innerHTML = "Welcome to " + x;
+    } 
+  </script>
+</body>
+
+</html>
